@@ -43,8 +43,8 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Services</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#services">Services</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Investment portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Services 1</a></li>
@@ -436,7 +436,7 @@
               </div>
               <div class="member-info">
                 <h4>Vijay R. Vekaria</h4>
-                <span>Partner</span>
+                <span>Strategic advisors</span>
                 <p class="member-description">
                   Ramesh is a seasoned corporate finance expert with 30+ years in project advisory, private equity, structured funding, and real estate financing, guiding SJF with deep industry insight.
                 </p>
@@ -451,7 +451,7 @@
               </div>
               <div class="member-info">
                 <h4>Ramesh Vekaria</h4>
-                <span>Partner</span>
+                <span>Strategic advisors</span>
                 <p class="member-description">
                   A qualified CA, lawyer, and CFA charterholder, he brings 15+ years of experience in investment banking, structured finance, and alternative investments, leading corporate finance at SJF and serving on the board of a major co-operative bank.
                 </p>
@@ -570,7 +570,7 @@
           </div> -->
 
           <div class="col-lg-8 offset-lg-2">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -598,8 +598,53 @@
                 </div>
 
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+            </form> -->
+          
+            <!-- WEB3FORM -->
+            <div data-aos="fade-up" data-aos-delay="200">
+              <form id="form" action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
+                <input type="hidden" name="access_key" value="71a4d28e-e1cb-4c28-ad9b-e256632cd908">
+                <input type="hidden" name="from_name" value="New Submission from Cybele Capital Partners Website">
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <!-- <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+                    <button type="submit">Send Message</button>
+
+                    <p class="text-base text-center text-gray-400" id="result"></p>
+
+                  </div>
+
+                </div>
+              </form>
+          
+            </div><!-- End Contact Form -->
+
+          </div>
 
         </div>
 
@@ -1161,7 +1206,7 @@
   <!-- particles.js -->
   <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.js"></script>
-
+  <script src="assets/js/web3.js"></script>
   <!-- courasel -->
   <script src="assets/js/test.js"></script>
 
