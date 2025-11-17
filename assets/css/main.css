@@ -2666,3 +2666,53 @@ section,
   width: auto;
   object-fit: contain;
 }
+
+/*--------------------------------------------------------------
+# Features Section (Our Services)
+--------------------------------------------------------------*/
+.features .intro-text {
+ /* max-width: 800px; */ /* Ograničava širinu teksta radi bolje čitljivosti */
+  margin-bottom: 50px; /* Dodaje razmak ispod teksta i iznad kartica */
+}
+
+.features .intro-text p {
+  font-size: 1rem; /* Standardna veličina fonta */
+  color: #444; /* Tamno siva boja, prijatnija za čitanje od crne */
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.features .service-item {
+  padding: 30px;
+  border: 1px solid #e9eaec;
+  border-radius: 8px;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  text-align: left; /* Poravnanje kao na originalnom sajtu */
+}
+
+.features .service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-color); /* Koristi postojeću akcentnu boju */
+}
+
+.features .service-item i {
+  font-size: 32px;
+  color: var(--accent-color); /* Koristi postojeću akcentnu boju */
+  margin-bottom: 25px;
+  display: block;
+}
+
+.features .service-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a2a4a; /* Teget boja sa originalnog sajta */
+}
+
+.features .service-item p {
+  font-size: 15px;
+  color: #6c757d;
+  line-height: 1.6;
+}
