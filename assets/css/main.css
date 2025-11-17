@@ -865,100 +865,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
-.features .nav-tabs {
-  border: 0;
-}
-
-.features .nav-link {
-  background-color: var(--surface-color);
-  color: var(--heading-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 15px 20px;
-  transition: 0.3s;
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  height: 100%;
-}
-
-.features .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
-
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.features .nav-link:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.features .nav-link.active {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.features .nav-link.active h4 {
-  color: var(--contrast-color);
-}
-
-@media (max-width: 768px) {
-  .features .nav-link i {
-    padding: 0;
-    line-height: 1;
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 575px) {
-  .features .nav-link {
-    padding: 15px;
-  }
-
-  .features .nav-link i {
-    font-size: 24px;
-  }
-}
-
-.features .tab-content {
-  margin-top: 30px;
-}
-
-.features .tab-pane h3 {
-  color: var(--heading-color);
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.features .tab-pane ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features .tab-pane ul li {
-  padding-bottom: 10px;
-}
-
-.features .tab-pane ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: var(--accent-color);
-}
-
-.features .tab-pane p:last-child {
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
@@ -2666,40 +2572,49 @@ section,
   width: auto;
   object-fit: contain;
 }
-
 /*--------------------------------------------------------------
 # Features Section (Our Services)
 --------------------------------------------------------------*/
-.features .intro-text {
- /* max-width: 800px; */ /* Ograničava širinu teksta radi bolje čitljivosti */
-  margin-bottom: 50px; /* Dodaje razmak ispod teksta i iznad kartica */
+
+/* Stil za uvodni i zaključni tekst */
+.features .intro-text,
+.features .conclusion-text {
+  margin-bottom: 50px;
 }
 
-.features .intro-text p {
-  font-size: 1rem; /* Standardna veličina fonta */
-  color: #444; /* Tamno siva boja, prijatnija za čitanje od crne */
+.features .intro-text p,
+.features .conclusion-text p {
+  font-size: 1rem;
+  color: #444;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
+/* Dodaje razmak iznad zaključnog teksta da ga odvoji od grida */
+.features .conclusion-text {
+  margin-top: 20px;
+  margin-bottom: 0; /* Uklanja duplu marginu na dnu sekcije */
+}
+
+/* Stil za kartice sa uslugama */
 .features .service-item {
   padding: 30px;
   border: 1px solid #e9eaec;
   border-radius: 8px;
   height: 100%;
   transition: all 0.3s ease-in-out;
-  text-align: left; /* Poravnanje kao na originalnom sajtu */
+  text-align: left;
 }
 
 .features .service-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-color: var(--accent-color); /* Koristi postojeću akcentnu boju */
+  border-color: var(--accent-color);
 }
 
 .features .service-item i {
   font-size: 32px;
-  color: var(--accent-color); /* Koristi postojeću akcentnu boju */
+  color: var(--accent-color);
   margin-bottom: 25px;
   display: block;
 }
@@ -2708,7 +2623,7 @@ section,
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #1a2a4a; /* Teget boja sa originalnog sajta */
+  color: #1a2a4a;
 }
 
 .features .service-item p {
